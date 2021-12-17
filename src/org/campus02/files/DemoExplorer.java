@@ -15,14 +15,14 @@ public class DemoExplorer {
         Folder root = new Folder("root");
         Folder subdir1 = new Folder("subdir1");
         Folder subdir2 = new Folder("subdir2");
-        Folder subdir1_sub = new Folder("subdir1-sub");
+        Folder subdir1_sub = new Folder("subdir1_sub");
 
         /*
         root
          + subdir1
             + subdir1_sub
-              textFile3
-              pictureFile3
+              textFile3.txt
+              pictureFile3.png
             textFile2
             textFile1
          + subdir2
@@ -48,7 +48,7 @@ public class DemoExplorer {
         System.out.println("subdir1 = " + subdir1.getSize());
 
         textFile2.print();
-        root.print("");
+        root.print();
 
                 /*
         root : total Size: 2802
@@ -63,7 +63,9 @@ public class DemoExplorer {
         pictureFile2 : 50kB
          */
 
-        System.out.println("\"demobild1.png\".contains(\"demobild\") = " + "demobild1.png".contains("demobild"));
+        root.print("");
+
+       /* System.out.println("\"demobild1.png\".contains(\"demobild\") = " + "demobild1.png".contains("demobild"));
 
         System.out.println("Searching for demobild");
         ArrayList<FSEntry> searchResults = root.findEntries("demobild");
@@ -78,6 +80,6 @@ public class DemoExplorer {
         System.out.println("found entries with dir: " + searchResults.size());
         for (FSEntry sr : searchResults) {
             System.out.println("sr.getName() = " + sr.getName());
-        }
+        }*/
     }
 }

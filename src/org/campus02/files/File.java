@@ -30,7 +30,12 @@ public class File extends FSEntry {
 
     @Override
     public ArrayList<FSEntry> findEntries(String name) {
-        // TODO: Needed implementation!
-        return null;
+        ArrayList<FSEntry> result = new ArrayList<>();
+
+        if (getName().contains(name)){
+            result.add(this);
+        }
+
+        return result;
     }
 }

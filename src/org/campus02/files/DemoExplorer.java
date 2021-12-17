@@ -65,7 +65,7 @@ public class DemoExplorer {
 
         root.print("");
 
-       /* System.out.println("\"demobild1.png\".contains(\"demobild\") = " + "demobild1.png".contains("demobild"));
+        System.out.println("\"demobild1.png\".contains(\"demobild\") = " + "demobild1.png".contains("demobild"));
 
         System.out.println("Searching for demobild");
         ArrayList<FSEntry> searchResults = root.findEntries("demobild");
@@ -80,6 +80,6 @@ public class DemoExplorer {
         System.out.println("found entries with dir: " + searchResults.size());
         for (FSEntry sr : searchResults) {
             System.out.println("sr.getName() = " + sr.getName());
-        }*/
+        }
     }
 }

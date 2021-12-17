@@ -53,7 +53,15 @@ public class Folder extends FSEntry {
 
     @Override
     public ArrayList<FSEntry> findEntries(String name) {
-        return null;
+        ArrayList<FSEntry> result = new ArrayList<>();
+
+        for (FSEntry fsEntry : entries) {
+            ArrayList<FSEntry> searchResultsOfMethodCall = fsEntry.findEntries(name);
+            result.addAll(searchResultsOfMethodCall);
+        }
+
+        return result;
+
     }
 
     public void addEntry(FSEntry entry) {

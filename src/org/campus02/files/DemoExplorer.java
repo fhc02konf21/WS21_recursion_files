@@ -63,7 +63,7 @@ public class DemoExplorer {
         pictureFile2 : 50kB
          */
 
-        root.print("");
+        root.print(" ");
 
        /* System.out.println("\"demobild1.png\".contains(\"demobild\") = " + "demobild1.png".contains("demobild"));
 
